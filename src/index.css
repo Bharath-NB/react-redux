@@ -1,5 +1,5 @@
 body {
-  background: url("./assets/bg.png") no-repeat center center fixed;
+  background: url("/assets/bg.png") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
