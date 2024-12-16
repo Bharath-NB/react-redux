@@ -1,68 +1,112 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+body {
+  background: url("./assets/bg.png") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
   }
-  a:hover {
-    color: #747bff;
+  .shopping {
+    font-size: 35px;
+    font-weight: bold;
   }
-  button {
-    background-color: #f9f9f9;
+  .card-products {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
-}
+  
+  .card {
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    color: whitesmoke;
+    flex-direction: column;
+    background: rgba(15, 4, 89, 0.719);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow: hidden;
+  }
+  .card:hover {
+    background-color: #051424;
+    box-shadow: 20px 20px 20px 20px rgba(191, 228, 27, 0.54);
+  }
+  .opt:hover {
+    background-color: #007bff;
+  }
+  .add {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .NoItems {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+  }
+  .InDe {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 3px;
+  }
+  .price-total {
+    display: flex;
+    height: 30px;
+  }
+  
+  .increament {
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .NavB {
+    color: whitesmoke;
+    background: rgba(131, 111, 255, 0.974);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 100px;
+    height: 5rem;
+    border: 5px solid rgb(23,193,222);
+    overflow: inherit;
+  }
+  /* .fixed-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    background: rgba(15, 4, 89, 0.974);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  } */
