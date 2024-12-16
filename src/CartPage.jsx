@@ -1,4 +1,3 @@
-// src/CartPage.jsx
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem, increaseQuantity, decreaseQuantity, removeItem, selectCartItems, selectTotalQuantity, selectTotalAmount } from './cartSlice';
@@ -29,7 +28,7 @@ const CartPage = () => {
 
   return (
     <div className="container mt-5">
-      <h1 className="text-center mb-4 text-primary">Vibrant Cart Page</h1>
+      <h1 className="text-center mb-4 text-primary"> Cart Page</h1>
 
       <div className="row">
         <div className="col-lg-6">
@@ -38,7 +37,12 @@ const CartPage = () => {
             <div key={product.id} className="product-card mb-4 p-3 border rounded shadow-sm">
               <div className="row align-items-center">
                 <div className="col-4">
-                  <img src={product.thumbnail} alt={product.title} className="img-fluid product-image" />
+                  {/* Displaying the unique image for each product */}
+                  <img
+                    src={product.image || product.thumbnail} // Assuming each product has a unique image
+                    alt={product.title}
+                    className="img-fluid product-image"
+                  />
                 </div>
                 <div className="col-8">
                   <h4>{product.title}</h4>
@@ -65,7 +69,12 @@ const CartPage = () => {
               <div key={item.id} className="cart-item mb-4 p-3 border rounded shadow-sm">
                 <div className="row align-items-center">
                   <div className="col-3">
-                    <img src={item.thumbnail} alt={item.title} className="img-fluid cart-item-image" />
+                    {/* Displaying the unique image for each cart item */}
+                    <img
+                      src={item.image || item.thumbnail} // Assuming each cart item has a unique image
+                      alt={item.title}
+                      className="img-fluid cart-item-image"
+                    />
                   </div>
                   <div className="col-6">
                     <h5>{item.title}</h5>
