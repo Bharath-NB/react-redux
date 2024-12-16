@@ -12,7 +12,7 @@
             "category": "smartphones",
             "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
             "images": [
-                "assets/iphone 9.jpg"
+                "assets/iphone9.jpg"
             ]
         },
         {
@@ -27,7 +27,7 @@
             "category": "smartphones",
             "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
             "images": [
-                "assets/iphone x.png"
+                "assets/iphonex.png"
             ]
         },
         {
@@ -42,7 +42,7 @@
             "category": "smartphones",
             "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
             "images": [
-                "assets/Samsung Universe 9.jpg"
+                "assets/SamsungUniverse9.jpg"
             ]
         },
         {
@@ -72,7 +72,7 @@
             "category": "smartphones",
             "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
             "images": [
-                "assets/Huawei P30.jpg"
+                "assets/HuaweiP30.jpg"
             ]
         }
     ]
